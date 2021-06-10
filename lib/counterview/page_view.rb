@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Counterview
-  # Holds information about page view
+  # Data structure that holds information about page view
   class PageView
     # Yeah, it's confusing, but let's assume that it's IP address format :D
     IP_ADDRESS_FORMAT = /\A(?:\d{3}\.){3}\d{3}\z/.freeze
