@@ -3,3 +3,4 @@
 require_relative 'counterview/page_view'
 require_relative 'counterview/parser'
 require_relative 'counterview/counter'
+require_relative 'counterview/sorter'
