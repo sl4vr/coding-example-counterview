@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+$LOAD_PATH.unshift("#{__dir__}/../lib")
+
+require 'counterview'
+
+begin
+  Counterview::FileProcessor.new.call(ARGV[0])
+rescue Counterview::FileProcessor::FileProcessorError => e
+  puts e
+  exit 1
+end
